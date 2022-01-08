@@ -1,0 +1,6 @@
+class Solution(object):
+    def isPalindrome(self, num):
+        self.num=str(num)
+        return self.num == self.num[::-1]
+result=Solution()
+result.isPalindrome(121)
