@@ -1,0 +1,21 @@
+# code
+'''python'''
+
+class Solution(object):
+    def reverse(self, x):
+        self.x = x
+        n = str(self.x)
+        num = n[::-1]
+        if self.x < 0:
+            num='-'+num
+            perm = num[:-1]
+            if int(perm) < -2**31:
+                result=0
+            else:
+                result=perm
+        else:
+            if int(num) > 2**31 - 1:
+                result=0
+            else:
+                result = num
+        return int(result)
